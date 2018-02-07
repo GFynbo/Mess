@@ -4,4 +4,6 @@ block content
     h1= title
     pre= "Don't forget to do any of these things!"
     - for (var x = 0; x < 5; x++)
-        li= "Task " + (x + 1)
+        input(type="checkbox")
+        label= "Task " + (x + 1)
+        br
