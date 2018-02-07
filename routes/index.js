@@ -16,4 +16,9 @@ router.get('/login', function(req, res, next) {
     res.render('login', { title: 'Logging in...' });
 });
 
+/* GET TodoList page. */
+router.get('/todolist', function(req, res, next) {
+    res.render('todolist', { title: 'Todos' });
+});
+
 module.exports = router;
