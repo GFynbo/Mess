@@ -3,7 +3,7 @@ extends layout
 block content
     h1= title
     pre= "Don't forget to do any of these things!"
-    - for (var x = 0; x < 5; x++)
+    - for (var x = 0; x < 50; x++)
         input(type="checkbox")
         label="Task " + (x + 1) + " "
             a(href="#edit")= "Edit"
