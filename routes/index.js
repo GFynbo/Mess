@@ -1,6 +1,8 @@
 var express = require('express');
-var MongoClient = require('mongodb').MongoClient;
+var mongoose = require('mongoose');
 var router = express.Router();
+
+var Schema = mongoose.Schema;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
