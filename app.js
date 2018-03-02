@@ -1,4 +1,13 @@
 var express = require('express');
+//Set up mongoose connection
+var mongoose = require('mongoose');
+var userDB = process.env.DB_USER || 'user';
+var passwordDB = process.env.DB_PASSWORD || 'password';
+var mongoDB = 'mongodb://' + userDB + ':' + passwordDB + '@ds253918.mlab.com:53918/mess_library';
+mongoose.connect(mongoDB);
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
