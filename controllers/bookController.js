@@ -1,7 +1,7 @@
 var Book = require('../models/book');
 
 // Home page
-exports.book_index = function(rec, res) {
+exports.index = function(rec, res) {
     res.send('NOT IMPLEMENTED: Site home page');
 };
 
