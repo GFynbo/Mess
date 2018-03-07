@@ -16,6 +16,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
+var catalog = require('./routes/catalog'); // import routes from catalog area of site
 
 var app = express();
 

@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Messing Around' });
+  res.redirect('/catalog');
 });
 
 /* GET secret page. */
