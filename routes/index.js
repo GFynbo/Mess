@@ -5,8 +5,8 @@ var router = express.Router();
 var Schema = mongoose.Schema;
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.redirect('/catalog');
+router.get('/', function(req, res) {
+    res.redirect('/catalog');
 });
 
 /* GET secret page. */
